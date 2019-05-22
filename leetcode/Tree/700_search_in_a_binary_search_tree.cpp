@@ -14,6 +14,7 @@ typedef struct TreeNode {
 
 class Solution {
  public:
+  // recursive version
   TreeNode* SearchBST(TreeNode* root, int val) {
     if (root == nullptr) {
       return nullptr;
@@ -28,6 +29,14 @@ class Solution {
       return root;
     }
     return res;
+  }
+
+  // iterative version
+  TreeNode* SearchBST2(TreeNode* root, int val) {
+    while (root != nullptr && root->val != val) {
+      root = (root->val > val) ? root->left : root->right;
+    }
+    return root;
   }
 };
 
