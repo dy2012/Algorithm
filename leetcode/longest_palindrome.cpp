@@ -1,32 +1,37 @@
+#include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
+
 class Solution {
  public:
-  int LongestPalindrome(std::string s) {
-      int char_map[128] = {0};
-      int max_length = 0;
-      int flag = 0;
-      for (int i = 0; i < s.size(); ++i) {
-          char_map[s[i]]++;
+  string longestPalindrome(string s) {
+      if (s.empty()) {
+          return "";
       }
-
-      for (int i = 0; i < 128; ++i) {
-          if (char_map[i] % 2 == 0) {
-              max_length += char_map[i];
-          } else {
-              flag = 1;
-              max_length += char_map[i] - 1;
+      int n = s.size();
+      int len = 1;
+      int left = 0;
+      vector<vector<int>> dp(n, vector<int>(n, 0));
+      for (int i = 0; i < n; ++i) {
+          dp[i][i] = 1;
+          for (int j = 0; j < i; ++j) {
+              dp[j][i] = (s[i] == s[j] && (i - j < 2 || dp[j + 1][i - 1]));
+              if (dp[j][i] && len < i - j + 1) {
+                  len = i - j + 1;
+                  left = j;
+              }
           }
       }
-      return max_length + flag;
+      return s.substr(left, len);
   }
 };
 
-int main() {
-    std::string s = "abcccccddaa";
+int main(int argc, char* argv[]) {
+    string tmp = "noon";
     Solution solution;
-    cout << solution.LongestPalindrome(s) << endl;
+    cout << solution.longestPalindrome(tmp) << endl;
     return 0;
 }
