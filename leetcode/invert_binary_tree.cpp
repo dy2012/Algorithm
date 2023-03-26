@@ -1,3 +1,5 @@
+// Given the root of a binary tree, invert the tree, and return its root.
+
 #include <iostream>
 #include <queue>
 
@@ -11,6 +13,7 @@ struct TreeNode {
   TreeNode(int x): val(x), left(nullptr), right(nullptr) {
   }
 };
+
 class Solution {
  public:
   TreeNode* invertTree(TreeNode* root) {
@@ -23,6 +26,7 @@ class Solution {
     root->right = invertTree(tmp);
     return root;
   }
+
   TreeNode* invertTree2(TreeNode* root) {
     if (root == nullptr) {
       return nullptr;
