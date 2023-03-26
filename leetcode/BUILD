@@ -35,8 +35,26 @@ cc_binary(
     linkopts = LINKOPTS
 )
 
-cc_test(
-    name = "leetcode_test",
-    srcs = [ "leetcode_test.cpp" ],
-    deps = ["@com_google_googletest//:gtest_main"],
+cc_binary(
+    name = "binary_tree_inorder_traversal",
+    srcs = [ "binary_tree_inorder_traversal.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "validate_binary_search_tree",
+    srcs = [ "validate_binary_search_tree.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "binary_tree_level_order_traversal",
+    srcs = [ "binary_tree_level_order_traversal.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
 )
