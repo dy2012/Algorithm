@@ -58,3 +58,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "binary_tree_right_side_view",
+    srcs = [ "binary_tree_right_side_view.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
