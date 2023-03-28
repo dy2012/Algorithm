@@ -66,3 +66,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "implement_trie",
+    srcs = [ "implement_trie.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "lowest_common_ancestor_of_a_binary_tree",
+    srcs = [ "lowest_common_ancestor_of_a_binary_tree.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
