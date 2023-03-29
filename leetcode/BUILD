@@ -82,3 +82,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "sort_list",
+    srcs = [ "sort_list.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
