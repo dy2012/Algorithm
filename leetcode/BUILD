@@ -90,3 +90,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "linked_list_cycle",
+    srcs = [ "linked_list_cycle.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "linked_list_cycle2",
+    srcs = [ "linked_list_cycle2.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
