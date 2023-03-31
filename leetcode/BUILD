@@ -106,3 +106,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "merge_two_sorted_list",
+    srcs = [ "merge_two_sorted_list.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "copy_random_list",
+    srcs = [ "copy_random_list.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
