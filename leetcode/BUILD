@@ -130,3 +130,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "partition_labels",
+    srcs = [ "partition_labels.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
