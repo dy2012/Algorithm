@@ -122,3 +122,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "kth_smallest_element_in_a_bst",
+    srcs = [ "kth_smallest_element_in_a_bst.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
