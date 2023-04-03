@@ -146,3 +146,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "diameter_of_binary_tree",
+    srcs = [ "diameter_of_binary_tree.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
