@@ -138,3 +138,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "subarray_sum_equals_k",
+    srcs = [ "subarray_sum_equals_k.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
