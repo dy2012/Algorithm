@@ -154,3 +154,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "daily_temperatures",
+    srcs = [ "daily_temperatures.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "decode_string",
+    srcs = [ "decode_string.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
