@@ -170,3 +170,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "subsets",
+    srcs = [ "subsets.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
