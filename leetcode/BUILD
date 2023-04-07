@@ -178,3 +178,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "best_time_to_buy_and_sell_stock",
+    srcs = [ "best_time_to_buy_and_sell_stock.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "rotate_array",
+    srcs = [ "rotate_array.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
