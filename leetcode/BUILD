@@ -194,3 +194,35 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "number_of_islands",
+    srcs = [ "number_of_islands.cpp"],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "course_schedule",
+    srcs = [ "course_schedule.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "single_number",
+    srcs = [ "single_number.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "roman_to_integer",
+    srcs = [ "roman_to_integer.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
