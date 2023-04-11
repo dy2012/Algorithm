@@ -226,3 +226,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "3_sum",
+    srcs = [ "3_sum.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "coin_change",
+    srcs = [ "coin_change.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
