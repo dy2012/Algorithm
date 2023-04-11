@@ -242,3 +242,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "top_k_frequent_elements",
+    srcs = [ "top_k_frequent_elements.cc" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "permutation_in_string",
+    srcs = [ "permutation_in_string.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
