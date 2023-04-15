@@ -258,3 +258,27 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "unique_paths",
+    srcs = [ "unique_paths.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "maximum_subarray",
+    srcs = [ "maximum_subarray.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "permutation",
+    srcs = [ "permutation.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
