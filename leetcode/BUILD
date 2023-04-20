@@ -282,3 +282,83 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "oranges_rotting",
+    srcs = [ "oranges_rotting.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "majority_elelment",
+    srcs = [ "majority_elelment.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "two_sum",
+    srcs = [ "two_sum.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "add_two_number",
+    srcs = [ "add_two_number.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "median_of_two_sorted_arrays",
+    srcs = [ "median_of_two_sorted_arrays.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "stl_next_permutation",
+    srcs = [ "stl_next_permutation.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "stl_unique",
+    srcs = [ "stl_unique.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "valid_parentheses",
+    srcs = [ "valid_parentheses.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "generate_parentheses",
+    srcs = [ "generate_parentheses.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "merge_k_sorted_lists",
+    srcs = [ "merge_k_sorted_lists.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
