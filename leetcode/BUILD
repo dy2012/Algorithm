@@ -362,3 +362,35 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "climbing_stairs",
+    srcs = [ "climbing_stairs.cpp" ],
+    deps =[
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "set_matrix_zeros",
+    srcs = [ "set_matrix_zeros.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "pascal_triangle",
+    srcs = [ "pascal_triangle.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "house_robber_3",
+    srcs = [ "house_robber_3.cc" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
