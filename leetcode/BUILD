@@ -394,3 +394,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "3sum",
+    srcs = [ "3sum.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
