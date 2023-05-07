@@ -402,3 +402,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "maximum_product_subarray",
+    srcs = [ "maximum_product_subarray.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
