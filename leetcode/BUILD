@@ -410,3 +410,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "partition_equal_subset_sum",
+    srcs = [ "partition_equal_subset_sum.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "basic_calculator_2",
+    srcs = [ "basic_calculator_2.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
