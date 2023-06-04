@@ -426,3 +426,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "multi_thread",
+    srcs = [ "multi_thread.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)

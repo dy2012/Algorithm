@@ -1,5 +1,6 @@
-leetcode/bazel-bin
-leetcode/bazel-out
-leetcode/bazel-leetcode
-leetcode/bazel-genfiles
-leetcode/bazel-testlogs
+*/bazel-bin
+*/bazel-offer
+*/bazel-out
+*/bazel-leetcode
+*/bazel-genfiles
+*/bazel-testlogs
