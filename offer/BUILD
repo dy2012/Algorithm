@@ -40,3 +40,19 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "jz76",
+    srcs = [ "jz76.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz23",
+    srcs = [ "jz23.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
