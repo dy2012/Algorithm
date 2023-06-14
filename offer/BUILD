@@ -56,3 +56,100 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "jz25",
+    srcs = [ "jz25.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz35",
+    srcs = [ "jz35.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+
+cc_binary(
+    name = "jz52",
+    srcs = [ "jz52.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz55",
+    srcs = [ "jz55.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz27",
+    srcs = [ "jz27.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz68",
+    srcs = [ "jz68.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz86",
+    srcs = [ "jz86.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz28",
+    srcs = [ "jz28.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz82",
+    srcs = [ "jz82.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz34",
+    srcs = [ "jz34.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz54",
+    srcs = [ "jz54.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz79",
+    srcs = [ "jz79.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
