@@ -161,3 +161,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "jz77",
+    srcs = [ "jz77.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
