@@ -2,7 +2,7 @@
 
 ## 链表结构
 
-`
+```c++
 struct ListNode {
   int val;
 
@@ -11,4 +11,4 @@ struct ListNode {
   ListNode(int x) : val(x), next(nullptr) {
   }
 };
-`
+```
