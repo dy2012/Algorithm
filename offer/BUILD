@@ -169,3 +169,43 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "jz8",
+    srcs = [ "jz8.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz78",
+    srcs = [ "jz78.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz7",
+    srcs = [ "jz7.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz36",
+    srcs = [ "jz36.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "jz26",
+    srcs = [ "jz26.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)

@@ -434,3 +434,27 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "remove_nodes_from_linked_list",
+    srcs = [ "remove_nodes_from_linked_list.cpp"],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "swapping_nodes_in_a_linked_list",
+    srcs = [ "swapping_nodes_in_a_linked_list.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "merge_two_sorted_array",
+    srcs = [ "merge_two_sorted_array.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
