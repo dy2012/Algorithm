@@ -458,3 +458,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "remove_elements",
+    srcs = [ "remove_elements.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
