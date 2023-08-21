@@ -25,13 +25,48 @@ class Solution {
       res[i] = count;
     }
   }
+
+  vector<int> countBits3(int n) {
+      vector<int> dp(n + 1, 0);
+      for (int i = 0; i <= n; ++i) {
+          if (i % 2 == 0) {
+              dp[i] = dp[i / 2];
+          } else {
+              dp[i] = dp[i / 2] + 1;
+          }
+      }
+      return dp;
+  }
+
+  vector<int> countBits4(int n) {
+      vector<int> res;
+      for (int i = 0; i <= n; ++i) {
+          int cur = 0;
+          int num = i;
+          while (num) {
+              if (num % 2) {
+                  ++cur;
+              }
+              num /= 2;
+          }
+          res.push_back(num);
+      }
+      return res;
+  }
+
 };
 
 int main(int argc, char* argv[]) {
   Solution solution;
   vector<int> nums = solution.countBits(10);
   for (int num : nums) {
-    cout << num << endl;
+    cout << num <<  ",";
   }
+  cout << endl;
+  vector<int> nums2 = solution.countBits(10);
+  for (int num : nums2) {
+      cout << num << ",";
+  }
+  cout << endl;
   return 0;
 }

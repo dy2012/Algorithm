@@ -466,3 +466,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "count_bits",
+    srcs  = [ "count_bits.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
