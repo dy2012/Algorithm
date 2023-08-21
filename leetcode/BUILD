@@ -474,3 +474,11 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "num_square",
+    srcs  = [ "num_square.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
