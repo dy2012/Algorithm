@@ -5,6 +5,7 @@
 // Both the left and right subtrees must also be binary search trees.
 
 #include <iostream>
+#include <stack>
 
 using namespace std;
 
@@ -34,6 +35,25 @@ bool IsValidBst(TreeNode* root) {
     return valid(root, INT_MIN, INT_MAX);
 }
 
+bool IsValidBst2(TreeNode* root) {
+    stack<TreeNode*> stk;
+    long long inorder = (long long)INT_MIN - 1;
+    while (!stk.empty() || root != nullptr) {
+        while (root != nullptr) {
+            stk.push(root);
+            root = root->left;
+        }
+        root = stk.top();
+        stk.pop();
+        if (root->val <= inorder) {
+            return false;
+        }
+        inorder = root->val;
+        root = root->right;
+    }
+    return true;
+}
+
 int main(int argc, char* argv[]) {
     TreeNode node1(1);
     TreeNode node2(2);
@@ -41,5 +61,6 @@ int main(int argc, char* argv[]) {
     node2.left = &node1;
     node2.right = &node3;
     cout << IsValidBst(&node2) << endl;
+    cout << IsValidBst2(&node2) << endl;
     return 0;
 }

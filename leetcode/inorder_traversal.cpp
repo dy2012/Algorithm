@@ -59,6 +59,27 @@ class Solution {
       inorder(root->right, res);
     }
   }
+
+  vector<int> inorderTraversal3(TreeNode* root) {
+    vector<int> res;
+    stack<pair<TreeNode* int>> stk;
+    stk.push((make_pair(root, 0)));
+    while (!stk.empty()) {
+        auto [node, type] = stk.top();
+        stk.pop();
+        if (nullptr == node) {
+            continue;
+        }
+        if (type == 0) {
+            stk.push(make_pair(node->right, 0));
+            stk.push(make_pair(node, 1));
+            stk.push(make_pair(node->left, 0));
+        } else {
+            res.emplace_back(node->val);
+        }
+    }
+    return res;
+  }
 };
 
 int main(int argc, char* argv[]) {
@@ -68,7 +89,7 @@ int main(int argc, char* argv[]) {
   node1.left = &node2;
   node2.right = &node3;
   Solution solution;
-  vector<int> tmp = solution.inorderTraversal(&node1);
+  vector<int> tmp = solution.inorderTraversal3(&node1);
   for (int val : tmp) {
     cout << val << " ";
   }
