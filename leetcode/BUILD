@@ -482,3 +482,35 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "mock_queue",
+    srcs = [ "mock_queue.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "class_size",
+    srcs = [ "class_size.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "permutation_str",
+    srcs = [ "permutation_str.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "reverse_sentence",
+    srcs = [ "reverse_sentence.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
