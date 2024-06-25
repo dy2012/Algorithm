@@ -514,3 +514,43 @@ cc_binary(
     ],
     linkopts = LINKOPTS
 )
+
+cc_binary(
+    name = "max_in_windows",
+    srcs = [ "max_in_windows.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "is_continuous",
+    srcs = [ "is_continuous.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "last_remaining",
+    srcs = [ "last_remaining.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "max_profit",
+    srcs = [ "max_profit.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
+
+cc_binary(
+    name = "add",
+    srcs = [ "add.cpp" ],
+    deps = [
+    ],
+    linkopts = LINKOPTS
+)
