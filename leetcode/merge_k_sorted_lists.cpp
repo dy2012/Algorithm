@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <queue>
+#include <functional>
 
 using namespace std;
 
@@ -60,6 +62,30 @@ ListNode* merge(ListNode* s, ListNode* t) {
     }
     if (t) {
         p->next = t;
+    }
+    return dummy.next;
+}
+
+ListNode* mergeNew(vector<ListNode*>& lists) {
+    auto cmp = [](const ListNode* left, const ListNode* right) {
+            return left->val > right->val;
+    };
+    priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> pq;
+    for (auto head : lists) {
+        if (head) {
+            pq.push(head);
+        }
+    }
+    ListNode dummy(-1);
+    ListNode* cur = &dummy;
+    while (!pq.empty()) {
+        auto* tmp = pq.top();
+        pq.pop();
+        if (tmp->next) {
+            pq.push(tmp->next);
+        }
+        cur->next = tmp;
+        cur = cur->next;
     }
     return dummy.next;
 }
